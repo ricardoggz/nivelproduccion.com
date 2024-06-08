@@ -1,5 +1,12 @@
+import { Banner } from "@/components"
 export default function Home() {
   return (
-    <h1>App</h1>
+    <>
+      <Banner
+        imageUrl='https://nivelproduccion.com/assets/banner.webp'
+        title='Contamos historias'
+        subtitle='Nivel Producción Audiovisual'
+      />
+    </>
   )
 }
