@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Banner
-        imageUrl='https://nivelproduccion.com/assets/banner.webp'
+        imageUrl='https://nivelproduccion.com/assets/jumbotron.webp'
         title='Contamos historias'
         subtitle='Nivel Producción Audiovisual'
       />

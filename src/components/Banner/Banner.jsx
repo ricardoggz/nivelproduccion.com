@@ -3,7 +3,7 @@ export const Banner = ({imageUrl, title, subtitle})=>{
         backgroundImage:`url(${imageUrl})`,
         backgroundPosition:'center',
         backgroundSize:'cover',
-        height:'80vh',
+        height:'90vh',
         width:'100%'
     }
     const bannerMask={
@@ -22,6 +22,7 @@ export const Banner = ({imageUrl, title, subtitle})=>{
         fontSize:'40px',
     }
     const bannerSubtitle={
+        fontSize:'20px',
         fontStyle:'italic'
     }
     return (
