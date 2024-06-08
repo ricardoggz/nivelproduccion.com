@@ -1,0 +1,41 @@
+.aboutWrapper{
+    background:url('https://www.nivelproduccion.com/assets/about_background.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+}
+.aboutDescription{
+    align-items: center;
+    display:flex;
+    gap:1rem;
+}
+.aboutText{
+    display:flex;
+    flex-direction: column;
+    gap:1.5rem;
+    height:100%;
+    line-height: 1.8rem;
+    text-align: justify;
+    width:100%;
+}
+.aboutDescription figure{
+    height:100%;
+    width:100%;
+}
+.aboutDescription img{
+    height:100%;
+    object-fit:contain;
+    object-position: top;
+    width:100%;
+}
+.aboutTitle{
+    font-size: 1.5rem;
+}
+.aboutMask{
+    background: #ffffffcf;
+    height:100%;
+    padding:6rem 0;
+    width:100%;
+}

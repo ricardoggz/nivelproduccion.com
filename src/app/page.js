@@ -1,4 +1,5 @@
 import { Banner } from "@/components"
+import { About } from "./components/About/About"
 import { Services } from "./components/Services/Services"
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         subtitle='Nivel Producción Audiovisual'
       />
       <Services/>
+      <About />
     </>
   )
 }
