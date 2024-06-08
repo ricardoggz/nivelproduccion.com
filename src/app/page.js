@@ -1,4 +1,6 @@
 import { Banner } from "@/components"
+import { Services } from "./components/Services/Services"
+
 export default function Home() {
   return (
     <>
@@ -7,6 +9,7 @@ export default function Home() {
         title='Contamos historias'
         subtitle='Nivel Producción Audiovisual'
       />
+      <Services/>
     </>
   )
 }

@@ -1,0 +1,40 @@
+.servicesWapper{
+    background: var(--black-primary);
+    color:white;
+    display:flex;
+    gap:1rem;
+    padding:2.5rem 0;
+}
+.serviceDescription{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    gap:1.5rem;
+    width:100%;
+}
+.serviceDescription ul{
+    align-items: flex-start;
+    display:flex;
+    flex-direction: column;
+    font-weight:600;
+    gap:0.5rem;
+    list-style: none;
+    margin:0 auto;
+    width:60%;
+}
+.serviceDescription svg{
+    font-size:4rem;
+}
+.serviceTitle{
+    align-items: center;
+    color:var(--golden-primary);
+    display:flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+@media (min-width:240px) and (max-width:880px){
+    .servicesWapper{
+        flex-direction: column;
+    }
+}
