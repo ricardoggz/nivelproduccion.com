@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { useState } from 'react'
 import { FaBars } from "react-icons/fa"
 import styles from './styles.module.css'
@@ -9,14 +10,24 @@ export const Navigation = ()=>{
     return (
         <header className={styles.headerWrapper}>
             <nav className={`flexContainer ${styles.navWrapper}`}>
-                <div>
-                    NIVELPRODUCCION
-                </div>
+                <figure>
+                    <Link href='/'>
+                        <img
+                            src='https://nivelproduccion.com/assets/logo.png'
+                            className={styles.navLogo}
+                        />
+                    </Link>
+                </figure>
                 <button className={styles.buttonMenu} onClick={activeMenu}>
                     <FaBars/>
                 </button>
                 <ul className={`${styles.navList} ${!isActive ? '' : styles.active}`}>
-                    <li>Inicio</li>
+                    <Link
+                    href='/'
+                    onClick={activeMenu}
+                    >
+                        <li>INICIO</li>
+                    </Link>                    
                 </ul>
             </nav>
         </header>

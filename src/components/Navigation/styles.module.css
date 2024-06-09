@@ -1,7 +1,6 @@
 .headerWrapper{
     background:var(--black-primary);
-    color:var(--golden-primary);
-    padding:2rem 0;
+    padding:0.5rem 0;
 }
 .navWrapper{
     align-items: center;
@@ -16,16 +15,26 @@
 .navList.active{
     left: 0;
 }
+.navList a{
+    color:white;
+    letter-spacing: 0.2rem;
+    text-decoration:none;
+}
+.navList a:hover{
+    text-decoration:underline;
+}
 .buttonMenu{
     display:none;
+}
+.navLogo{
+    width:5rem;
 }
 /*responsive*/
 @media (min-width:240px) and (max-width:880px){
     .buttonMenu{
         background: none;
-        border:1px solid var(--gray-primary);
-        color:var(--blue-primary);
-        border-radius: 50%;
+        border:none;
+        color:var(--golden-primary);
         display:flex;
         justify-content: center;
         font-size:1.5rem;
@@ -44,5 +53,8 @@
         align-items: center;
         justify-content: center;
         transition: 500ms all ease-in-out;
+    }
+    .navLogo{
+        width:3rem;
     }
 }
