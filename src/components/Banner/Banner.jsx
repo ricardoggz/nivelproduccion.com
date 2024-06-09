@@ -1,7 +1,18 @@
-export const Banner = ({imageUrl, title, subtitle})=>{
+'use client'
+import { useState, useEffect} from 'react'
+
+export const Banner = ({imageUrl, imageResponsiveUrl, title, subtitle})=>{
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+    useEffect(() => {
+        const handleResize = () => setWindowWidth(window.innerWidth)
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, []);
+
     const bannerWrapper ={
-        backgroundImage:`url(${imageUrl})`,
-        backgroundPosition:'center',
+        backgroundImage: windowWidth < 900 ? `url(${imageResponsiveUrl})` : `url(${imageUrl})`,
+        backgroundPosition: windowWidth < 900 ? 'top' : 'center',
         backgroundSize:'cover',
         height:'90vh',
         width:'100%'
