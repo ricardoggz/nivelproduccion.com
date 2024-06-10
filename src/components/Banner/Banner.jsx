@@ -1,43 +1,51 @@
 'use client'
-import { useMediaQuery } from "react-responsive"
+import { css } from "@emotion/css"
 
 export const Banner = ({imageUrl, imageResponsiveUrl, title, subtitle})=>{
-    const isMobile = useMediaQuery({
-        query:'(min-width:240px) and (max-width:900px)'
-    })
-    const bannerWrapper ={
-        backgroundImage: `url(${imageUrl})`,
-        backgroundSize:'cover',
-        height: !isMobile ? '90vh' : '100%',
-        width:'100%'
-    }
-    const bannerMask={
-        alignItems:'center',
-        background:'#191816ae',
-        color:'white',
-        display:'flex',
-        flexDirection:'column',
-        gap:'0.5rem',
-        height:'100%',
-        justifyContent:'center',
-        padding: !isMobile ? '0' : '100px 0',
-        textAlign:'center',
-        width:'100%',
-    }
-    const bannerTitle={
-        fontSize:'40px',
-    }
-    const bannerSubtitle={
-        fontSize:'20px',
-        fontStyle:'italic'
-    }
+    const bannerWrapper =css`
+        background: url(${imageUrl});
+        background-size:cover;
+        height: 90vh;
+        width:100%;
+        @media(min-width:240px) and (max-width:900px){
+            height:100%;
+        }
+        `
+    const bannerMask=css`
+        align-items:center;
+        background:#191816ae;
+        color:white;
+        display:flex;
+        flex-direction: column;
+        gap:0.5rem;
+        height:100%;
+        justify-content:center;
+        text-align:center;
+        width:100%;
+        @media(min-width:240px) and (max-width:900px){
+            padding:90px 0;
+        }
+        `
+    const bannerTitle=css`
+        font-size:3.5rem;
+        @media(min-width:240px) and (max-width:900px){
+            font-size:2rem;
+        }
+    `
+    const bannerSubtitle=css`
+        font-size:1.5rem;
+        font-style:italic;
+        @media(min-width:240px) and (max-width:900px){
+           font-size:1rem;
+        }
+        `
     return (
-        <section style={bannerWrapper}>
-            <div style={bannerMask}>
-                <h1 style={bannerTitle}>
+        <section className={bannerWrapper}>
+            <div className={bannerMask}>
+                <h1 className={bannerTitle}>
                     {title}
                 </h1>
-                <span style={bannerSubtitle}>
+                <span className={bannerSubtitle}>
                     {subtitle}
                 </span>
             </div>
