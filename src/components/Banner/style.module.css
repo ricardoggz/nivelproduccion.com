@@ -1,0 +1,6 @@
+.bannerWrapper{
+    background: url('https://nivelproduccion.com/assets/jumbotron.webp');
+    background-size: cover;
+    height: 90vh;
+    width:100%;
+}
