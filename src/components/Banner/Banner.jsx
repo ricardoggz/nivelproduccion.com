@@ -1,20 +1,14 @@
 'use client'
-import { useState, useEffect} from 'react'
+import { useMediaQuery } from "react-responsive"
 
 export const Banner = ({imageUrl, imageResponsiveUrl, title, subtitle})=>{
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-
-    useEffect(() => {
-        const handleResize = () => setWindowWidth(window.innerWidth)
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, []);
-
+    const isMobile = useMediaQuery({
+        query:'(min-width:240px) and (max-width:900px)'
+    })
     const bannerWrapper ={
-        backgroundImage: windowWidth < 900 ? `url(${imageResponsiveUrl})` : `url(${imageUrl})`,
-        backgroundPosition: windowWidth < 900 ? 'top' : 'center',
+        backgroundImage: `url(${imageUrl})`,
         backgroundSize:'cover',
-        height:'90vh',
+        height: !isMobile ? '90vh' : '100%',
         width:'100%'
     }
     const bannerMask={
@@ -26,6 +20,7 @@ export const Banner = ({imageUrl, imageResponsiveUrl, title, subtitle})=>{
         gap:'0.5rem',
         height:'100%',
         justifyContent:'center',
+        padding: !isMobile ? '0' : '100px 0',
         textAlign:'center',
         width:'100%',
     }
