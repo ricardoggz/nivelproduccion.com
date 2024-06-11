@@ -13,7 +13,7 @@ export const Banner = ({imageUrl, imageResponsiveUrl, title, subtitle})=>{
         `
     const bannerMask=css`
         align-items:center;
-        background:#191816ae;
+        background: #000000cf;
         color:white;
         display:flex;
         flex-direction: column;

@@ -26,7 +26,7 @@ export const Navigation = ()=>{
                     href='/'
                     onClick={activeMenu}
                     >
-                        <li>INICIO</li>
+                        <li>Inicio</li>
                     </Link>                    
                 </ul>
             </nav>

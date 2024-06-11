@@ -21,6 +21,9 @@
     text-align: justify;
     width:100%;
 }
+.aboutText p{
+    font-family: "Hind", sans-serif;
+}
 .aboutDescription figure{
     height:100%;
     width:100%;
@@ -32,12 +35,12 @@
     width:100%;
 }
 .aboutTitle{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    padding-bottom:1rem;
 }
 .aboutMask{
     background: #000000cf;
     height:100%;
-    padding:6rem 0;
     width:100%;
 }
 @media (min-width:240px) and (max-width:880px){

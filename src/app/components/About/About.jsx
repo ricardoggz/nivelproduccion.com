@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 export const About = ()=>{
     return (
         <section className={styles.aboutWrapper}>
-            <div className={styles.aboutMask}>
+            <div className={`paddingSection ${styles.aboutMask}`}>
                 <div className={`flexContainer ${styles.aboutDescription}`}>
                     <figure>
                         <img src='https://nivelproduccion.com/assets/about_photo.webp' />
