@@ -1,5 +1,5 @@
 import './globals.css'
-import { Navigation } from "@/components"
+import { Navigation, Footer } from "@/components"
 
 export const metadata = {
   title: "Nivel Producción Audiovisual",
@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navigation/>
         {children}
+        <Footer/>
       </body>
     </html>
   )
