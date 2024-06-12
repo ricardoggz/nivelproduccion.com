@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 export const Footer = ()=>{
     return (
         <footer className={styles.footerWrapper}>
-            <div className={`paddingSection ${styles.footerMask}`}>
+            <div className={`paddingSection maskContainer ${styles.footerMask}`}>
                 <div className={styles.footerContent}>
                     <ul className={styles.footerList}>
                         <li className={styles.footerTitle}>Contacto</li>

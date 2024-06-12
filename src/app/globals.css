@@ -29,3 +29,8 @@ body{
     padding:6rem 0;
   }
 }
+
+/*mask container*/
+.maskContainer{
+  background:#000000ae;
+}
