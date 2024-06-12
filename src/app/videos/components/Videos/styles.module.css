@@ -1,0 +1,16 @@
+.videosWrapper{
+    background: var(--black-primary);
+}
+.videosGrid{
+    display:grid;
+    gap:1rem;
+    grid-template-columns: repeat(2,1fr);
+}
+.videosGrid iframe{
+    border-radius: 30px;
+}
+@media (min-width:240px) and (max-width:900px){
+    .videosGrid{
+        grid-template-columns: 1fr;
+    }
+}

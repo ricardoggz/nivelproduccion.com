@@ -22,12 +22,22 @@ export const Navigation = ()=>{
                     <FaBars/>
                 </button>
                 <ul className={`${styles.navList} ${!isActive ? '' : styles.active}`}>
-                    <Link
-                    href='/'
-                    onClick={activeMenu}
-                    >
-                        <li>Inicio</li>
-                    </Link>                    
+                    <li>
+                        <Link
+                        href='/'
+                        onClick={activeMenu}
+                        >
+                            Inicio
+                        </Link>  
+                    </li>
+                    <li>
+                        <Link
+                        href='/videos'
+                        onClick={activeMenu}
+                        >
+                            Videos
+                        </Link>  
+                    </li>             
                 </ul>
             </nav>
         </header>

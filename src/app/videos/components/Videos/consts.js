@@ -1,0 +1,42 @@
+export const videos=[
+    {
+        id:1,
+        link: 'https://www.youtube.com/embed/uABvc7rRk-c?si=aLrR3smv-hMOvtUL'
+    },
+    {
+        id:2,
+        link: 'https://www.youtube.com/embed/LmcF_Zf8jwo?si=woAnr2Cs9Dboplca'
+    },
+    {
+        id:3,
+        link:'https://www.youtube.com/embed/qGcUrlQqY_Q?si=d0qDmPr25INp4seu'
+    },
+    {
+        id:4,
+        link:'https://www.youtube.com/embed/4lUyas72a9I?si=XID2yiRAoQjPHKov'
+    },
+    {
+        id:5,
+        link:'https://www.youtube.com/embed/iqyo4aLoh5Q?si=iJMKIzSGhUmu0uRI'
+    },
+    {
+        id:6,
+        link:'https://www.youtube.com/embed/28FRTUbbFbI?si=sUgPiV85NH90wUPC'
+    },
+    {
+        id:7,
+        link:'https://www.youtube.com/embed/kqaKadUYGUE?si=GUDUqwfignWcHUBJ'
+    },
+    {
+        id:8,
+        link:'https://www.youtube.com/embed/kUYL1g_Jh7c?si=ZOQLyA3yHlqGiRc7'
+    },
+    {
+        id:9,
+        link:'https://www.youtube.com/embed/noo_pHGBpZc?si=wphcfW2dhpTlWtJX'
+    },
+    {
+        id:10,
+        link:'https://www.youtube.com/embed/TEUTWfU_rBk?si=fW3jFtWJ-SKUSi5B'
+    }
+]
