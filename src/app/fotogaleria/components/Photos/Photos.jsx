@@ -10,7 +10,7 @@ export const Photos = () => {
         <ImageGallery
             items={images}
             showThumbnails
-            lazyLoad
+            loading='lazy'
           />
     </section>
   );

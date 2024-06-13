@@ -6,7 +6,10 @@ export const About = ()=>{
             <div className={`paddingSection maskContainer ${styles.aboutMask}`}>
                 <div className={`flexContainer ${styles.aboutDescription}`}>
                     <figure>
-                        <img src='https://nivelproduccion.com/assets/about_photo.webp' />
+                        <img
+                            src='https://nivelproduccion.com/assets/about_photo.webp'
+                            loading='lazy'
+                        />
                     </figure>
                     <div className={styles.aboutText}>
                         <span className={styles.aboutTitle}>Nosotros</span>
