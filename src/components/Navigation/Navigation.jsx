@@ -45,7 +45,15 @@ export const Navigation = ()=>{
                         >
                             Fotogalería
                         </Link>  
-                    </li>             
+                    </li>
+                    <li>
+                        <Link
+                        href='/contacto'
+                        onClick={activeMenu}
+                        >
+                            Contacto
+                        </Link>  
+                    </li>           
                 </ul>
             </nav>
         </header>

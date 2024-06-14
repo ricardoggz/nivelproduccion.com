@@ -1,0 +1,29 @@
+.contactWrapper{
+    background: var(--black-primary);
+    width:100%;
+}
+.contactInfo{
+   border: 1px solid var(--golden-primary);
+    color:white;
+    display:flex;
+    justify-content: center;
+}
+.contactInfo figure{
+    background: #a1a1a1;
+    height:400px;
+    width:100%;
+}
+.contactInfo img{
+    height: 100%;
+    object-fit:contain;
+    object-position: top;
+    width:100%;
+}
+.contactInfo div{
+    padding:1rem 0;
+    width:100%;
+}
+.contactInfo span{
+    color:var(--golden-primary);
+    font-size: 2rem;
+}
