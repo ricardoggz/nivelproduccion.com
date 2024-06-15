@@ -1,5 +1,6 @@
 'use client'
 import { css } from "@emotion/css"
+import { Fade } from "react-awesome-reveal"
 
 export const Banner = ({imageUrl, imageResponsiveUrl, title, subtitle})=>{
     const bannerWrapper =css`
@@ -42,12 +43,16 @@ export const Banner = ({imageUrl, imageResponsiveUrl, title, subtitle})=>{
     return (
         <section className={bannerWrapper}>
             <div className={bannerMask}>
-                <h1 className={bannerTitle}>
-                    {title}
-                </h1>
-                <span className={bannerSubtitle}>
-                    {subtitle}
-                </span>
+                <Fade>
+                    <h1 className={bannerTitle}>
+                        {title}
+                    </h1>
+                </Fade>
+                <Fade>
+                    <span className={bannerSubtitle}>
+                        {subtitle}
+                    </span>
+                </Fade>
             </div>
         </section>
     )
