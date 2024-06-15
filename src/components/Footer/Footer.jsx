@@ -1,5 +1,6 @@
 import styles from './styles.module.css'
-import { IoMdMail } from "react-icons/io"
+import { IoLocationSharp } from "react-icons/io5"
+import { IoMdMail, IoLogoWhatsapp } from "react-icons/io"
 import { FaFacebook, FaWhatsapp, FaYoutube  } from "react-icons/fa"
 
 export const Footer = ()=>{
@@ -27,13 +28,24 @@ export const Footer = ()=>{
                         </li>
                     </ul>
                     <ul className={styles.footerList}>
+                        <li className={styles.footerTitle}>Ubicación</li>
+                        <li
+                            style={{
+                                fontSize:'36px'
+                            }}
+                        >
+                            <IoLocationSharp/>
+                        </li>
+                        <li>Venustiano Carranza, CDMX</li>
+                    </ul>
+                    <ul className={styles.footerList}>
                         <li className={styles.footerTitle}>Contacto directo</li>
                         <li>
                             <a
                                 href='https://wa.me/525584405634'
                                 target='_blank'
                             >
-                                <FaWhatsapp />
+                                <IoLogoWhatsapp />
                             </a>
                         </li>
                         <li>
