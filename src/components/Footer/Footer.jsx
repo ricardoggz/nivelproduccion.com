@@ -59,7 +59,7 @@ export const Footer = ()=>{
                     </ul>
                 </div>
                 <div className={styles.footerCopyRight}>
-                    <p>&copy; Todos los derechos reservados - Nivel Producción Audiovisual 2024</p>
+                    <p>&copy; Todos los derechos reservados - Desarrollado por WEBRSTUDIO</p>
                 </div>
             </div>
         </footer>

@@ -1,15 +1,24 @@
 .servicesWapper{
-    background: var(--black-primary);
-    color:white;
-    display:flex;
+    background:url('../../../../../public/assets/images/bg-services.png');
+    background-attachment: fixed;
+    background-position:bottom;
+    background-size: cover;
     gap:1rem;
-    padding:2.5rem 0;
+}
+.servicesGrid{
+    display: grid;
+    gap:1rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 .serviceDescription{
     align-items: center;
+    background: var(--white-primary);
+    border-radius:5px;
     display:flex;
     flex-direction: column;
     gap:1.5rem;
+    padding: 6rem;
+    text-align: center;
     width:100%;
 }
 .serviceDescription ul{
@@ -27,14 +36,16 @@
 }
 .serviceTitle{
     align-items: center;
-    color:var(--golden-primary);
     display:flex;
     flex-direction: column;
     font-size: 1.5rem;
+    gap:1rem;
 }
-
+.serviceImage{
+    width:50%;
+}
 @media (min-width:240px) and (max-width:880px){
-    .servicesWapper{
-        flex-direction: column;
+    .servicesGrid{
+        grid-template-columns: 1fr;
     }
 }

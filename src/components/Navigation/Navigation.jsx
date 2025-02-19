@@ -29,31 +29,7 @@ export const Navigation = ()=>{
                         >
                             Inicio
                         </Link>  
-                    </li>
-                    <li>
-                        <Link
-                        href='/videos'
-                        onClick={activeMenu}
-                        >
-                            Videos
-                        </Link>  
-                    </li>   
-                    <li>
-                        <Link
-                        href='/fotogaleria'
-                        onClick={activeMenu}
-                        >
-                            Fotogalería
-                        </Link>  
-                    </li>
-                    <li>
-                        <Link
-                        href='/contacto'
-                        onClick={activeMenu}
-                        >
-                            Contacto
-                        </Link>  
-                    </li>           
+                    </li>       
                 </ul>
             </nav>
         </header>

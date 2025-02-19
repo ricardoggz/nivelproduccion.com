@@ -1,5 +1,5 @@
 .footerWrapper{
-    background:url('https://www.nivelproduccion.com/assets/footer.webp');
+    background:var(--black-primary);
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
@@ -21,7 +21,6 @@
     align-items: center;
     display:flex;
     flex-direction: column;
-    font-family: "Hind", sans-serif;
     gap:1rem;
     height:100%;
     list-style: none;
@@ -36,7 +35,6 @@
     font-size:1.5rem;
 }
 .footerCopyRight{
-    font-family: "Hind", sans-serif;
     padding-top:6rem;
     text-align: center;
 }

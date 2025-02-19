@@ -1,6 +1,5 @@
 .headerWrapper{
     background:var(--black-primary);
-    font-family: "Hind", sans-serif;
     padding:0.5rem 0;
 }
 .navWrapper{
@@ -17,7 +16,7 @@
     left: 0;
 }
 .navList a{
-    color:white;
+    color:var(--golden-primary);
     text-decoration:none;
 }
 .navList a:hover{
@@ -27,7 +26,7 @@
     display:none;
 }
 .navLogo{
-    width:5rem;
+    width:5%;
 }
 /*responsive*/
 @media (min-width:240px) and (max-width:880px){
